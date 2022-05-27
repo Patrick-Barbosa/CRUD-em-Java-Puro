@@ -13,7 +13,7 @@ public class App {
 
         do {
 
-            System.out.println("------- Olá Usuário - Bem vindo ao programa!! -------");
+            System.out.println("------- Olá Usuário - Bem vindo ao software de loja de carro!! -------");
             System.out.println("\nDigite a opção que deseja:\n1. Adicionar um dado\n2. Deletar um dado\n3. Atualizar um dado\n4. Ler os dados\n5. Sair da aplicação\n6. Limpar a tela");
             decision = sc.nextInt();
             if (decision == 1) {
@@ -30,10 +30,10 @@ public class App {
             }
 
             if (decision == 2) {
-                System.out.println("Então você deseja deletar um dado!\nCaso tenha errado, digite a letra c\nPor favor, digite o número do carro: ");
+                System.out.println("Então você deseja deletar um dado!\nCaso tenha errado, digite cancelar\nPor favor, digite o número do carro: ");
                 String input = sc.next();
-                if (input == "c") {
-
+                if (input.equalsIgnoreCase("cancelar")) {
+                    break;
                 } else {
                     int inputInt = Integer.parseInt(input);
                     list.remove(inputInt-1);
@@ -66,7 +66,7 @@ public class App {
                         list.get(i-1).setCarPrice(carPrice);
                         break;
                     case 4:
-                        System.out.println("Não haverá alteração em nada, você retornará ao menu inicial!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                        System.out.println("Não haverá alteração em nada, você retornará ao menu inicial!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                         break;
                 }
 
@@ -79,7 +79,7 @@ public class App {
                 }
             }
             if (decision == 6) {
-                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
             }
         } while  (decision != 5);
 
