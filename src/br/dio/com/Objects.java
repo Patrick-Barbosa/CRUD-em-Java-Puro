@@ -47,6 +47,6 @@ class Car {
     }
 
     public String toString () {
-        return "Carro número: " + carID + "\nModelo: " + carModel + "\nAno: " + carYear + "\nValor: " + carPrice + "\n--------------";
+        return "--------------\nCarro número: " + carID + "\nModelo: " + carModel + "\nAno: " + carYear + "\nValor: " + carPrice + "\n--------------";
     }
 }
